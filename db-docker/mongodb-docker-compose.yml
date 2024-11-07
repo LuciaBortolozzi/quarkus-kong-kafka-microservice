@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  mongodb:
+    image: mongo:7-jammy
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: lnb
+      MONGO_INITDB_ROOT_PASSWORD: 1.n.6!
+    ports:
+      - "27017:27017"
+    networks:
+      - school-network
+
+networks:
+  school-network:
+    name: school-network
+    external: true

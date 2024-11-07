@@ -1,18 +1,18 @@
 package com.lnb.school.professor.dtos;
 
 public class ProfessorRequestDto {
-    private String lidn;
+    private String pidn;
     private String name;
     private String email;
     private String phone;
     private String major;
 
-    public String getLidn() {
-        return lidn;
+    public String getPidn() {
+        return pidn;
     }
 
-    public void setLidn(String lidn) {
-        this.lidn = lidn;
+    public void setPidn(String pidn) {
+        this.pidn = pidn;
     }
 
     public String getName() {

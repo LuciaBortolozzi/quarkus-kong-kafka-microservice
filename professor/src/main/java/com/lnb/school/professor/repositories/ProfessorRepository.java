@@ -7,7 +7,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class ProfessorRepository implements PanacheRepository<Professor> {
-    public Professor findByLidn(String lidn) {
-        return find("lidn = ?1", lidn).firstResult();
+    public Professor findByPidn(String pidn) {
+        return find("pidn = ?1", pidn).firstResult();
     }
 }

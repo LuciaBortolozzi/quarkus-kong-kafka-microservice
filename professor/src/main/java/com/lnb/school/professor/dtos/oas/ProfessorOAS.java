@@ -9,7 +9,7 @@ public class ProfessorOAS {
     @Schema(name = "ProfessorOAS.Request")
     public class Request {
         @Schema(required = true, example = "0000111")
-        public String lidn;
+        public String pidn;
         @Schema(required = true, example = "Severus Snape")
         public String name;
         @Schema(required = true, example = "severus.snape@gmail.com")

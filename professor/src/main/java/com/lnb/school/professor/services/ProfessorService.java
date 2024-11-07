@@ -32,7 +32,7 @@ public class ProfessorService {
             throw new ValidationException(BAD_REQUEST);
 
         Professor professor = new Professor();
-        professor.lidn = req.getLidn();
+        professor.pidn = req.getPidn();
         professor.name = req.getName();
         professor.email = req.getEmail();
         professor.phone = req.getPhone();
@@ -55,8 +55,8 @@ public class ProfessorService {
         if (professor == null)
             throw new ValidationException(DATA_NOT_FOUND);
 
-        professorRepository.update("lidn = ?1, name = ?2, email = ?3, phone = ?4, major = ?5 where id = ?6",
-                req.getLidn(),
+        professorRepository.update("pidn = ?1, name = ?2, email = ?3, phone = ?4, major = ?5 where id = ?6",
+                req.getPidn(),
                 req.getName(), req.getEmail(), req.getPhone(), req.getMajor(), id);
 
         JsonObject resp = new JsonObject();
@@ -84,11 +84,11 @@ public class ProfessorService {
         return resp;
     }
 
-    public JsonObject getProfessorByLidn(String lidn) {
+    public JsonObject getProfessorByPidn(String pidn) {
         JsonObject resp = new JsonObject();
         resp.put(CODE_KEY, CODE_200_VAL);
         resp.put(MESSAGE_KEY, MESSAGE_VAL);
-        resp.put(DATA_KEY, professorRepository.findByLidn(lidn));
+        resp.put(DATA_KEY, professorRepository.findByPidn(pidn));
 
         return resp;
     }

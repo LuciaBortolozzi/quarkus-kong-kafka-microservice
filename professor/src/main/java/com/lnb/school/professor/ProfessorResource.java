@@ -82,14 +82,14 @@ public class ProfessorResource {
     }
 
     @GET
-    @Path("/lidn/{lidn}")
-    @Operation(summary = "Get Professor by LIDN", description = "This API will get Professor by LIDN from Database")
+    @Path("/pidn/{pidn}")
+    @Operation(summary = "Get Professor by PIDN", description = "This API will get Professor by PIDN from Database")
     @APIResponses(value = {
             @APIResponse(responseCode = "200", description = "OK", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = ProfessorOAS.Response.class))),
             @APIResponse(responseCode = "400", description = "Bad Request", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = ProfessorOAS.BadRequest.class)))
     })
-    public Response getProfessorByLidn(@PathParam("lidn") String lidn) {
-        return Response.ok().entity(professorService.getProfessorByLidn(lidn)).build();
+    public Response getProfessorByPidn(@PathParam("pidn") String pidn) {
+        return Response.ok().entity(professorService.getProfessorByPidn(pidn)).build();
     }
 
     @DELETE

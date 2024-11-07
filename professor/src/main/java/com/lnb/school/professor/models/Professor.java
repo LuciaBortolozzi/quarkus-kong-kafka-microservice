@@ -21,8 +21,8 @@ public class Professor {
     @Column(name = "id", nullable = false)
     public Long id;
 
-    @Column(name = "lidn", length = 16, nullable = false)
-    public String lidn; // Professor ID Number
+    @Column(name = "pidn", length = 16, nullable = false)
+    public String pidn; // Professor ID Number
 
     @Column(name = "name", length = 100, nullable = false)
     public String name;

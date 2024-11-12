@@ -5,7 +5,7 @@ import java.util.Date;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 public class ProfessorOAS {
-    
+
     @Schema(name = "ProfessorOAS.Request")
     public class Request {
         @Schema(required = true, example = "0000111")

@@ -1,9 +1,6 @@
 package com.lnb.school.study.utils;
 
 public class Constants {
-    private Constants() {
-    }
-
     public static final String BAD_REQUEST = "BAD_REQUEST";
     public static final String DATA_NOT_FOUND = "DATA_NOT_FOUND";
     public static final String CODE_KEY = "code";
@@ -17,4 +14,6 @@ public class Constants {
     public static final String STUDY_NAME_KEY = "studyName";
     public static final String STUDY_START_TIME_KEY = "studyStartTime";
     public static final String STUDY_END_TIME_KEY = "studyEndTime";
+    private Constants() {
+    }
 }

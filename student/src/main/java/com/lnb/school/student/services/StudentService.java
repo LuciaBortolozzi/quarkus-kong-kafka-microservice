@@ -3,7 +3,15 @@ package com.lnb.school.student.services;
 import com.lnb.school.student.dtos.StudentRequestDto;
 import com.lnb.school.student.models.Student;
 import com.lnb.school.student.repositories.StudentRepository;
-import static com.lnb.school.student.utils.Constants.*;
+
+import static com.lnb.school.student.utils.Constants.BAD_REQUEST;
+import static com.lnb.school.student.utils.Constants.CODE_200_VAL;
+import static com.lnb.school.student.utils.Constants.CODE_201_VAL;
+import static com.lnb.school.student.utils.Constants.CODE_KEY;
+import static com.lnb.school.student.utils.Constants.DATA_KEY;
+import static com.lnb.school.student.utils.Constants.DATA_NOT_FOUND;
+import static com.lnb.school.student.utils.Constants.MESSAGE_KEY;
+import static com.lnb.school.student.utils.Constants.MESSAGE_VAL;
 
 import io.vertx.core.json.JsonObject;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -100,4 +108,5 @@ public class StudentService {
 
         return resp;
     }
+
 }

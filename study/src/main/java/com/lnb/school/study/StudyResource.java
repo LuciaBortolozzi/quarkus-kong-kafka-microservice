@@ -40,7 +40,7 @@ public class StudyResource {
     @POST
     @Operation(summary = "Add a new study", description = "This API will add a new study to database")
     @RequestBody(content = {
-            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.Request.class)) })
+            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.Request.class))})
     @APIResponses(value = {
             @APIResponse(responseCode = "201", description = "Accepted", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.Response.class))),
             @APIResponse(responseCode = "400", description = "Bad Request", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.BadRequest.class)))
@@ -53,7 +53,7 @@ public class StudyResource {
     @Path("/{id}")
     @Operation(summary = "Update Study", description = "This API will update Study to database")
     @RequestBody(content = {
-            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.Request.class)) })
+            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.Request.class))})
     @APIResponses(value = {
             @APIResponse(responseCode = "200", description = "OK", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.Response.class))),
             @APIResponse(responseCode = "400", description = "Bad Request", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudyOAS.BadRequest.class)))

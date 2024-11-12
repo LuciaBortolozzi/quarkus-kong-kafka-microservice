@@ -38,7 +38,7 @@ public class StudyOAS {
 
     @Schema(name = "StudyOAS.BadRequest")
     public class BadRequest {
-        @Schema(example = "BAD_REQUEST", enumeration = { "BAD_REQUEST", "INVALID_BODY" })
+        @Schema(example = "BAD_REQUEST", enumeration = {"BAD_REQUEST", "INVALID_BODY"})
         public String message;
     }
 }

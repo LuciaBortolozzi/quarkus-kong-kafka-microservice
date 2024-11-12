@@ -38,7 +38,7 @@ public class StudentResource {
     @POST
     @Operation(summary = "Add a new Student", description = "This API will add a new Student to database")
     @RequestBody(content = {
-            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.Request.class)) })
+            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.Request.class))})
     @APIResponses(value = {
             @APIResponse(responseCode = "201", description = "Accepted", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.Response.class))),
             @APIResponse(responseCode = "400", description = "Bad Request", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.BadRequest.class)))
@@ -51,7 +51,7 @@ public class StudentResource {
     @Path("/{id}")
     @Operation(summary = "Update Student", description = "This API will update Student to database")
     @RequestBody(content = {
-            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.Request.class)) })
+            @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.Request.class))})
     @APIResponses(value = {
             @APIResponse(responseCode = "200", description = "OK", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.Response.class))),
             @APIResponse(responseCode = "400", description = "Bad Request", content = @Content(mediaType = MediaType.APPLICATION_JSON, schema = @Schema(implementation = StudentOAS.BadRequest.class)))

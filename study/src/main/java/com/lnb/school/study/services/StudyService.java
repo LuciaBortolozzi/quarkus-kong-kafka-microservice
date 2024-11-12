@@ -22,6 +22,7 @@ import com.lnb.school.study.model.Student;
 import com.lnb.school.study.model.Study;
 import com.lnb.school.study.repositories.StudentRepository;
 import com.lnb.school.study.repositories.StudyRepository;
+
 import static com.lnb.school.study.utils.Constants.BAD_REQUEST;
 import static com.lnb.school.study.utils.Constants.CODE_200_VAL;
 import static com.lnb.school.study.utils.Constants.CODE_201_VAL;
@@ -35,6 +36,7 @@ import static com.lnb.school.study.utils.Constants.SIDN_KEY;
 import static com.lnb.school.study.utils.Constants.STUDY_END_TIME_KEY;
 import static com.lnb.school.study.utils.Constants.STUDY_NAME_KEY;
 import static com.lnb.school.study.utils.Constants.STUDY_START_TIME_KEY;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -62,7 +64,7 @@ public class StudyService {
 
     @Inject
     public StudyService(StudentRepository studentRepository, StudyRepository studyRepository,
-            ObjectMapper mapper) {
+                        ObjectMapper mapper) {
         this.studentRepository = studentRepository;
         this.studyRepository = studyRepository;
         this.mapper = mapper;

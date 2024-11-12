@@ -7,6 +7,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: lnb
       MONGO_INITDB_ROOT_PASSWORD: 1.n.6!
+      MONGO_INITDB_DATABASE: study
     ports:
       - "27017:27017"
     networks:

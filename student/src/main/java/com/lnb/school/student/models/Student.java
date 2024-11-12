@@ -16,13 +16,13 @@ import jakarta.persistence.Table;
 @Table(name = "student")
 public class Student {
     @Id
-    @SequenceGenerator(name = "studentSequence", sequenceName = "sidn_seq", allocationSize = 1, initialValue = 1)
+    @SequenceGenerator(name = "studentSequence", sequenceName = "student_id_seq", allocationSize = 1, initialValue = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "studentSequence")
     @Column(name = "id", nullable = false)
     public Long id;
 
     @Column(name = "sidn", length = 16, nullable = false)
-    public String sidn;
+    public String sidn; // Student ID Number
 
     @Column(name = "name", length = 100, nullable = false)
     public String name;

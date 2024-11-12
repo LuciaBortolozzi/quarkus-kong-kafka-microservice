@@ -29,11 +29,10 @@ All services:
 
 ## Screenshots
 
-![Quarkus](https://github.com/user-attachments/assets/de083e1d-c578-48e9-b8d5-7d0c88d4af36)
-![Quarkus resources endpoints example](https://github.com/user-attachments/assets/7de437e4-52ea-4461-a33e-f404a6f56809)
+![Quarkus](screenshots%2FQuarkus.png)
+![Quarkus resources endpoints example](screenshots%2FQuarkus_resources_endpoints_example.png)
 
-![Kong manager overview](https://github.com/user-attachments/assets/fc9f1d01-6943-4a7b-94c8-f5697b4b4e06)
+![Kong manager overview](screenshots%2FKong_manager_overview.png)
 
-![Kafka Dashboard](https://github.com/user-attachments/assets/c09f3cd9-e1b0-4ffb-9419-0e37058972d0)
-![Kafka topic](https://github.com/user-attachments/assets/ab6f1c36-1462-47a2-a83a-f14f0163d513)
-
+![Kafka Dashboard](screenshots%2FKafka_Dashboard.png)
+![Kafka topic](screenshots%2FKafka_topic.png)

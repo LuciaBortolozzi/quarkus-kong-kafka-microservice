@@ -1,7 +1,3 @@
-Certainly! Here’s a refined README template with a more professional tone:
-
----
-
 # Microservices Architecture with Java, Quarkus, Kafka, PostgreSQL, MongoDB, Docker, and Kong API Gateway
 
 This repository demonstrates a microservices architecture utilizing **Java**, **Quarkus**, **Apache Kafka**, **PostgreSQL**, **MongoDB**, **Docker**, and **Kong API Gateway**. Each service performs distinct business functions, collaborating to deliver a cohesive system.

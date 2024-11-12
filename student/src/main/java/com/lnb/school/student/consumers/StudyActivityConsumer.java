@@ -40,7 +40,7 @@ public class StudyActivityConsumer {
                 sa.studyEndTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
                         .parse(studyActivityPayload.getStudyEndTime());
             } catch (ParseException e) {
-                // e.printStackTrace();
+                e.printStackTrace();
             }
             studyActivityRepository.persist(sa);
         });
